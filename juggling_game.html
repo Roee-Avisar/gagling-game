@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juggling Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Juggling Game</h1>
+    <div class="video-container">
+        <video id="video" autoplay muted></video>
+        <canvas id="overlay"></canvas>
+        <div id="counter">Counter: 0</div>
+        <button id="resetButton">Reset Counter</button>
+    </div>
+
+    <div id="controls">
+        <label for="line-height-slider">Line Height:</label>
+        <input type="range" id="line-height-slider" min="0" max="100" value="80">
+        <label for="line-color">Line Color:</label>
+        <input type="color" id="line-color" value="#e602b9">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
